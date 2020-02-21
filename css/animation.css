@@ -1,0 +1,42 @@
+/* animation */
+.hide{
+  overflow: hidden;
+}
+.showUp{
+  animation-name: showUp;
+  animation-duration: 2000ms;
+  animation-timing-function: cubic-bezier(0.065, 0.62, 0.165, 1);
+  animation-fill-mode: forwards;
+}
+@keyframes showUp{
+  0%{
+    transform: translateY(100%);
+  }100%{
+    transform: translateY(0%);
+  }
+}
+.showDown{
+  animation-name: showDown;
+  animation-duration: 1500ms;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-fill-mode: forwards;
+}
+@keyframes showDown{
+  0%{
+    transform: translateY(-100%);
+  }100%{
+    transform: translateY(0%);
+  }
+}
+.showTransparence{
+  animation-name: Transparence;
+  animation-duration: 2000ms;
+  animation-fill-mode: forwards;
+}
+@keyframes Transparence{
+  0%{
+    opacity: 0;
+  }100%{
+    opacity: 1;
+  }
+}

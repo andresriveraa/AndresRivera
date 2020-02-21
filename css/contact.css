@@ -1,0 +1,140 @@
+.menuLeft {
+  text-align: right;
+}
+.centerSquare{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.squareback{
+  width: 752px;
+  height: 520px;
+  background-color: #EFEFEF;
+}
+.gridContact{
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 70vh;
+}
+.mainContac{
+}
+.contentMailContact, .contentPhone{
+  display: flex;
+  height: 100%;
+}
+.contentSocialContact{
+  margin-top: 40px;
+}
+.contentMailContact{
+  align-items: center;
+}
+.contentPhone{
+  align-items: flex-end;
+}
+.social h2{
+  font-size: 2rem;
+}
+.phonContact, .mailcontact{
+  width: 100%;
+}
+.mailcontact{
+  text-align: center;
+}
+.mailcontact h2 a{
+  color: var(--main-color);
+  font-size: 2rem;
+  font-family: var(--main-font-bold);
+}
+.phonContact{
+  text-align: right;
+}
+/* redes sociales */
+.rrssContact{
+  display: inline-block;
+  display: grid;
+  grid-template-columns: repeat(6, 48px);
+}
+.phonContact h2{
+  font-size: 2rem;
+}
+.iconSocial{
+  background-repeat: no-repeat;
+  height: 80px;
+  width: 100%;
+  background-position-x: center;
+  margin-right: 8px;
+}
+.social h6, .social h2, .mailcontact h2, .mailcontact h6,
+.phonContact h2, .phonContact h6{
+  margin:8px 0;
+}
+.instagram{
+  background-image: url(../img//social/instagram-black.png);
+}
+.instagram:hover{
+  background-image: url(../img/social/instagram.png);
+}
+.behance{
+  background-image: url(../img/social/behance-black.png);
+}
+.behance:hover{
+  background-image: url(../img/social/behance.png);
+}
+.github{
+  background-image: url(../img/social/github-black.png);
+}
+.github:hover{
+  background-image: url(../img/social/github.png);
+}
+.linkedin{
+  background-image: url(../img/social/linkedin-black.png);
+}
+.linkedin:hover{
+  background-image: url(../img/social/linkedin.png);
+}
+.facebok{
+  background-image: url(../img/social/facebook-black.png);
+}
+.facebok:hover{
+  background-image: url(../img/social/facebook.png);
+}
+.twitter{
+  background-image: url(../img/social/twitter-black.png);
+}
+.twitter:hover{
+  background-image: url(../img/social/twitter.png);
+}
+@media screen and (max-width: 767px){
+  .squareback {
+    width: 70%;
+    height: 70%;
+  }
+  .gridContact{
+    grid-template-columns: none;
+    height: initial;
+  }
+  .social{
+    text-align: left;
+  }
+  .rrssContact{
+    width: 64vw;
+    margin: auto;
+    grid-template-columns: repeat(6, 32px);
+  }
+  .phonContact {
+    text-align: center;
+  }
+  .contentMailContact{
+    margin-top: 16px;
+  }
+  .contentPhone{
+    margin-top: 40px;
+  }
+}

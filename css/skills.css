@@ -1,0 +1,155 @@
+
+.menuLeft {
+  text-align: right;
+}
+.contentSkills{
+  margin-top: 40px;
+}
+.contentDevWeb, .contentDesignWeb{
+  display: grid;
+  column-gap: 40px;
+}
+.contentDevWeb{
+  grid-template-columns: 400px auto;
+}
+.contentDesignWeb{
+  grid-template-columns: auto 300px;
+}
+.titleDevWeb{
+  width: 500px;
+}
+.orange{
+  color: var(--main-color);
+  margin: 0;
+}
+.titleSkills{
+  text-align: right;
+}
+.titleSection{
+  font-size: 3rem;
+  margin: 0;
+}
+.contentLineSkills{
+  display: flex;
+  align-items: center;
+}
+.lineSkils{
+  width: 100%;
+}
+.skill{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skill:hover > p{
+  color: var(--main-color);
+}
+/* devSkills */
+/* grid dev */
+.gridSkills{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.gridSkills, .gridSkillsDesign{
+  max-width: 906px;
+  margin: auto;
+  margin-top: 56px;
+  margin-bottom: 56px;
+
+}
+.skillImgIcon{
+  width: 80px;
+  height: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+#html{
+  background-image: url(../img/social/html-black.png);
+}
+.skill:hover>#html{
+  background-image: url(../img/social/html-color.png);
+}
+#css{
+  background-image: url(../img/social/css-black.png);
+}
+.skill:hover>#css{
+  background-image: url(../img/social/css-color.png);
+}
+#js{
+  background-image: url(../img/social/js-black.png);
+}
+.skill:hover>#js{
+  background-image: url(../img/social/js-color.png);
+}
+#vue{
+  background-image: url(../img/social/vue-black.png);
+}
+.skill:hover>#vue{
+  background-image: url(../img/social/vue-color.png);
+}
+#git{
+  background-image: url(../img/social/git-black.png);
+}
+.skill:hover>#git{
+  background-image: url(../img/social/git-color.png);
+}
+
+/* grid design  */
+.gridSkillsDesign{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#AdobeXd{
+  background-image: url(../img/social/Xd.png);
+}
+.skill:hover>#AdobeXd{
+  background-image: url(../img/social/Xd-color.png);
+}
+#Ai{
+  background-image: url(../img/social/Ai.png);
+}
+.skill:hover>#Ai{
+  background-image: url(../img/social/Ai-color.png);
+}
+#Ps{
+  background-image: url(../img/social/Ps.png);
+}
+.skill:hover>#Ps{
+  background-image: url(../img/social/Ps-color.png);
+}
+#Ide{
+  background-image: url(../img/social/Ide.png);
+}
+.skill:hover>#Ide{
+  background-image: url(../img/social/Ide-color.png);
+}
+@media screen and (max-width: 767px){
+  .contentDevWeb,.contentDesignWeb {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+  .wrapDevelopment{
+    width: 100%;
+  }
+  .titleDevWeb {
+    width: 100%;
+  }
+  .gridSkills, .gridSkillsDesign {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .titleSection {
+    font-size: 2.5rem;
+  }
+  .skillImgIcon {
+    width: 48px;
+    height: 48px;
+  }
+  .lineHIdeRespo{
+    display: none;
+  }
+  .contentLineSkillsResponsove{
+    display: block;
+  }
+}

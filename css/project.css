@@ -1,0 +1,151 @@
+.menuLeft{
+  text-align: right;
+}
+/* projects */
+/* .proyects{
+  display: ;
+} */
+/* project */
+.project{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-bottom: 24px;
+  display: grid;
+  grid-template: auto 1fr / 1fr 1fr ;
+  column-gap: 32px;
+  position: relative;
+}
+.titleProject{
+  grid-column: 1 / 3 ;
+}
+/* POPUP INFO */
+.moreInfopopuP{
+  position: fixed;
+  top: 0px;
+  right: 0;
+  z-index: 50;
+  width: 100vw;
+  height: 100vh;
+}
+.closepopup{
+  position: absolute;
+  right: 40px;
+  cursor: pointer;
+  z-index: 150;
+  color: var(--main-color);
+  font-family: var(--main-font-bold);
+  font-size: 1.5rem;
+}
+.contentPopUp{
+  background-color:#f8f5f4eb;
+  width: 80vw;
+  height: 100vh;
+  margin: auto;
+  padding: 16px;
+  box-sizing: border-box;
+  overflow: scroll;
+}
+.moreInfopopuP{
+  display: none;
+}
+.hidePOPUP{
+  display: none;
+}
+.showPopup{
+  display: block;
+}
+.titlepopoup{
+  color: var(--main-color);
+  font-size: 1.5rem;
+  font-family: var(--main-font-bold);
+}
+@media screen and (min-width: 1366px){
+  .contentPopUp{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr;
+    column-gap: 32px;
+  }
+  .popgrid{
+    height: 100%;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+}
+/* title */
+.LineProject{
+  width: 300px;
+  position: absolute;
+}
+.titleProject h1 {
+  font-size: 3rem;
+}
+.hideTitle{
+  transform: translateY(100%);
+}
+/* image */
+.imgProject{
+  grid-column: 1 / 2 ;
+  margin-left: 120px;
+}
+.imgProject img{
+  width: 560px;
+}
+/* text */
+.descriptionProject{
+  grid-column: 2 / 3 ;
+  position: relative;
+}
+.moreInfo{
+  color: var(--main-color);
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+.contentdate{
+  position: absolute;
+  bottom: 0;
+  width: 50px;
+}
+.contentdate p{
+  font-family: var(--main-font);
+  margin-top: 0px;
+}
+
+
+/* 767 responnsive */
+@media screen and (max-width: 1366px){
+  .project{
+    max-width: 88vw;
+    column-gap: 16px;
+  }
+}
+@media screen and (max-width: 767px){
+  .project{
+    max-width: 88vw;
+    column-gap: 16px;
+    display: block;
+  }
+  .titleProject{
+    text-align: center;
+  }
+  .LineProject {
+    width: 100%;
+    position: relative;
+}
+  .titleProject h1{
+    font-size: 2.5rem;
+  }
+  .imgProject{
+    margin-left: 0px;
+  }
+  .imgProject img {
+    width: 100%;
+  }
+  .moreInfo{
+    /* position: relative; */
+  }
+  .contentdate{
+    position: relative;
+  }
+}

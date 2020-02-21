@@ -1,0 +1,118 @@
+:root{
+  --background-color: #F8F5F4;
+  --main-color: #FF5733;
+  --black: #323232;
+  --grey: #707070;
+  --main-font: "Raleway Regular";
+  --main-font-bold: "Raleway";
+  --second-font: Quicksand; 
+}
+@font-face{
+  font-family: 'Quicksand';
+   src: url(../font/Quicksand-Regular.ttf); 
+}
+@font-face{
+  font-family: 'Raleway Regular';
+  src:  url(font/Raleway-Regular.ttf);
+}
+@font-face{
+  font-family: 'Raleway';
+  src:  url(../font/Raleway-SemiBold.ttf);
+}
+body{
+  background-color: var(--background-color);
+  font-size: 16px;
+  margin: 0;
+  cursor: url(../img/cursorpng.png), auto;
+  
+}
+#body{
+}
+a{
+  text-decoration: none;
+  font-family: var(--second-font);
+}
+h1, h2, h3{
+  font-family: var(--main-font-bold);
+}
+h4, h5, h6{
+  font-family: var(--main-font);
+}
+p, a{
+  font-family: var(--second-font);
+}
+*::selection {
+  background: var(--main-color);
+  color: black
+  /* text-shadow: 1px 1px #fff; */
+}
+figure{
+  margin: 0;
+}
+/* navbar  */
+.imgHome{
+  height: 100px;
+}
+.figureBackImg img{
+  width: 80px;
+  border-radius: 50%;
+}
+.navBar{
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  padding: 16px 120px;;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.spaceMenu{
+  position: relative;
+}
+.menuRight, .menuRightImg{
+  display: flex;
+}
+.menuRightImg{
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.inicio{
+  /* transform: translateX(-100%); */
+  position: absolute;
+  right: 2;
+  top:1;
+  /* transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+}
+.menuRightImg:hover > .inicio {
+  transition-duration: 2000ms;
+  right: -50%;
+}
+.figureBackImg{
+  position: relative;
+}
+.menuLeft{
+  transform: tra nslateY(-100%);
+  display: flex;
+  flex-direction: column;
+}
+.menuLeft a{
+  color: var(--grey);
+  font-size: 1rem;
+}
+a:hover, a:active{
+  color: var(--main-color);
+  text-decoration: underline;
+}
+.box{
+  max-width: 80vw;
+  margin: auto;
+}
+@media screen and (max-width: 767px){
+  .navBar{
+    padding: 16px 64px;
+    background-color: var(--background-color)
+  }
+}

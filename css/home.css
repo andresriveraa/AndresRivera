@@ -1,0 +1,145 @@
+a{
+  text-decoration: none;
+  color: grey;
+}
+/* hero */
+.contentHero{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.hero{
+  width: 88vw;
+  height: 92vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 96px;
+  padding: 32px 32px 0;;
+  box-sizing: border-box;
+}
+.TitleMain{
+  text-align: right;
+  width: 100%;
+  grid-column: 1;
+}
+/* name */
+.nameTitle{
+  font-family: var(--main-font-bold);
+  font-size: 8rem;
+  margin: 0;
+  transform: translateY(100%);
+}
+.contentLast{
+  margin-top: -16px;
+}
+.lastnameTitle{
+  margin: -24px 0px 0px;
+  font-size: 8rem;
+  font-family: var(--main-font);
+}
+.career{
+  margin: -16px 0 0;
+  color: var(--main-color);
+  font-size: 2rem;
+  font-family: var(--second-font);
+  font-weight: 400;
+}
+.aboutMe{
+  font-family: var(--second-font);
+  width: 464px;
+  opacity: 0;
+}
+.textAbout{
+  position: relative;
+}
+.lineabout{
+  width: 200px;
+  position: absolute;
+}
+.textAbout span{
+  font-family: var(--main-font);
+  color: var(--main-color);
+  position: relative;
+  top: -6px;
+  font-size: 3rem;
+  float: left;
+  margin-bottom: -27px;
+  margin-right: 4px;
+  box-sizing: border-box;
+}
+/* foto */
+.contentImgProfile{
+  height: 100%;
+  grid-column: 2 /3;
+  grid-row: 1 / 3;
+  background-color: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 16px;
+  box-sizing: border-box;
+}
+.mainImg, #figureMe{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.mainImg{
+  opacity: 0;
+}
+.mainImg img{
+  height: 100%;
+  width: 100%;
+    object-fit: cover;
+}
+@media screen and (max-width: 767px){
+  .hero{
+    width: 80%;
+    padding: 0;
+    grid-template-columns: 100%;
+    grid-template-rows: 150px 1fr 1fr;
+  }
+  .contentHero{
+    /* display: initial; */
+    margin-top: 40px;
+  }
+  .contentImgProfile {
+    width: 150px;
+    height: 150px;
+    margin-left: calc(100% - 150px);
+    grid-column: 1 /2;
+    border-radius: 50%;
+    padding: 8px;
+  }
+  .mainImg img{
+    border-radius: 50%;
+  }
+  /* name */
+  .TitleMain {
+    text-align: left;
+    grid-row: 2 / 3;
+  }
+  .nameTitle, .lastnameTitle{
+    font-size: 4rem;
+  }
+  .contentLast {
+    margin-top: -8px;
+  }
+  .lastnameTitle {
+    margin: -8px 0px 0px;
+  }
+  /* text about */
+  .aboutMe{
+    width: 100%;
+    /* margin-left: 148px; */
+  }
+  .textAbout{
+    width: 75%;
+    margin-left: 25%;
+    box-sizing: border-box;
+  }
+}
